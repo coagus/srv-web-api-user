@@ -12,6 +12,6 @@ El servidor corre en el puerto 3000, la primera vez se debe ejecutar lo siguient
 
 > sh init.sh
 
-Para detenerlo le damos Ctrl+c y si queremos ejecutarlo nuevamente ejecutamos lo siguiente:
+Para levantar el server ejecutamos lo siguiente:
 
 > node src/app.js
