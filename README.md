@@ -8,9 +8,9 @@ Servicio nodejs para gestionar usuarios con una web api
 
 ## Ejecutar servicio
 
-El servidor corre en el puerto 3000, la primera vez se debe ejecutar lo siguiente:
+El servidor corre en el puerto 3000, la primera vez se debe ejecutar lo siguiente para que cargue las librerias:
 
-> sh init.sh
+> npm install -d
 
 Para levantar el server ejecutamos lo siguiente:
 
