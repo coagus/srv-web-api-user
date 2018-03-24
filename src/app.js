@@ -1,15 +1,17 @@
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
 const express = require('express');
 const app = express();
 
-const morgan = require('morgan');
-const bodyParser = require('body-parser');
+// middlewares
+app.use(cors());
+app.use(morgan('dev'));
+app.use(bodyParser.json());
 
 // settings
 app.set('port', process.env.PORT || 3000);
-
-// middlewares
-app.use(morgan('dev'));
-app.use(bodyParser.json());
+app.disable('etag');
 
 // routes
 require('./routes/user.js')(app);
